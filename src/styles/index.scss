@@ -1,7 +1,8 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf');
 }
 
 @import 'variables';
-@import 'scaffolding';
+@import 'base';
+@import 'navbar';

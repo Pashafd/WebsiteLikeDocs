@@ -1,0 +1,65 @@
+.showcase {
+  height: 400px;
+  background: $backNavShowcase;
+  position: relative;
+
+  .showcase-form {
+    z-index: 100;
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 100%;
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+  }
+
+  .form-control {
+    margin: 30px 0;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid $border-color;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+    background-color: $font-color;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    color: $font-color;
+    border: 1px $font-color solid;
+  }
+}
+
+.showcase::after,
+.showcase::before {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -60px;
+  right: 0;
+  left: 0;
+  background-color: $background-color;
+  z-index: 0;
+  @include transforSkew;
+}

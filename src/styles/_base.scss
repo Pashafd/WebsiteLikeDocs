@@ -10,11 +10,11 @@ $border-color: #b4becb;
   align-items: center;
 }
 
-@mixin transforSkew {
-  transform: skewY(-3deg);
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
+@mixin transform($prop) {
+  transform: $prop;
+  -webkit-transform: $prop;
+  -moz-transform: $prop;
+  -ms-transform: $prop;
 }
 
 @mixin flexSpace {

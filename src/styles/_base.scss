@@ -1,6 +1,9 @@
 $font-size: 0.8rem;
 $font-family: 'Montserrat', sans-serif;
 $background-color: #00000f;
+$secondary-color: #1c3fa8;
+$darkBlue-color: #002240;
+$light-color: #f4f4f4;
 $font-color: #eee;
 $backNavShowcase: #047adb;
 $border-color: #b4becb;
@@ -204,4 +207,50 @@ py-5 {
 
 p-5 {
   padding: 4rem;
+}
+
+/* backrounds colored buttons */
+.bg-primary {
+  background-color: $backNavShowcase;
+}
+
+.btn-dark {
+  background-color: $darkBlue-color;
+}
+
+.btn-secondary,
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+.btn-darkBlue,
+.bg-darkBlue {
+  background-color: $darkBlue-color;
+}
+
+.btn-light,
+.bg-light {
+  background-color: $light-color;
+  color: #000;
+}
+
+/* Text sizes */
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
 }

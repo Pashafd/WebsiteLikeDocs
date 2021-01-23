@@ -61,6 +61,8 @@ a {
   color: $font-color;
 }
 
+
+
 h1,
 h2 {
   font-weight: 300;
@@ -210,8 +212,13 @@ p-5 {
 }
 
 /* backrounds colored buttons */
+
 .bg-primary {
   background-color: $backNavShowcase;
+}
+
+.bg-dark {
+  background-color: $darkBlue-color;
 }
 
 .btn-dark {
@@ -235,6 +242,7 @@ p-5 {
 }
 
 /* Text sizes */
+
 .lead {
   font-size: 20px;
 }

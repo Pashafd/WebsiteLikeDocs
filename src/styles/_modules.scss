@@ -1,3 +1,32 @@
+/* Navbar */
+
+.navbar {
+  background-color: $backNavShowcase;
+  z-index: 1;
+  height: 70px;
+  width: 100%;
+
+  .flex {
+    @include flexSpace;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  a {
+    color: $font-color;
+    padding: 10px;
+    margin: 0 5px;
+  }
+
+  a:hover {
+    border-bottom: 2px #eee solid;
+  }
+}
+
+/* Showcase */
+
 .showcase {
   height: 400px;
   background: $backNavShowcase;
@@ -62,4 +91,58 @@
   background-color: $background-color;
   z-index: 0;
   @include transform(skewY(-2deg));
+}
+
+/* Stats */
+
+.stats {
+  padding-top: 100px;
+
+  .stats-heading {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .grid h3 {
+    font-size: 35px;
+  }
+
+  .grid p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+/* Cli */
+
+.cli {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+}
+
+/* Cloud */
+
+.cloud {
+  .grid {
+    grid-template-columns: 4fr 3fr;
+  }
+}
+
+/* Footer */
+
+.footer {
+  .social a {
+    margin: 0 10px;
+  }
+
+  a:hover {
+    color: $darkBlue-color;
+  }
 }

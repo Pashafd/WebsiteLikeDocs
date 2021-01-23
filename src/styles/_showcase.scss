@@ -61,5 +61,5 @@
   left: 0;
   background-color: $background-color;
   z-index: 0;
-  @include transforSkew;
+  @include transform(skewY(-2deg));
 }

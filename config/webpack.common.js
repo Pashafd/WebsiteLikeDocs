@@ -48,6 +48,15 @@ module.exports = {
       template: paths.src + '/template.html',
       filename: 'index.html', // output file
     }),
+
+    new HtmlWebpackPlugin({
+      title: 'ResponsiveWebsite',
+      favicon: paths.src + '/images/favicon.png',
+      // template file
+      // шаблон
+      template: paths.src + '/features.html',
+      filename: 'features.html', // output file
+    }),
   ],
 
   // Determine how modules within the project are treated

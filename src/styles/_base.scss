@@ -37,8 +37,7 @@ $border-color: #b4becb;
 }
 
 .flex {
-  display: flex;
-  justify-content: space-between;
+ @include flexCenter
 }
 
 * {

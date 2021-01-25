@@ -8,11 +8,6 @@ $font-color: #eee;
 $backNavShowcase: #047adb;
 $border-color: #b4becb;
 
-%flex {
-  display: flex;
-  align-items: center;
-}
-
 @mixin transform($prop) {
   transform: $prop;
   -webkit-transform: $prop;
@@ -21,13 +16,10 @@ $border-color: #b4becb;
 }
 
 @mixin flexSpace {
-  @extend %flex;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-}
-
-@mixin flexCenter {
-  @extend %flex;
-  justify-content: center;
+  height: 100%;
 }
 
 @mixin mq($size) {
@@ -37,7 +29,7 @@ $border-color: #b4becb;
 }
 
 .flex {
- @include flexCenter
+  @include flexSpace();
 }
 
 * {

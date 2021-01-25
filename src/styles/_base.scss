@@ -3,8 +3,10 @@ $font-family: 'Montserrat', sans-serif;
 $background-color: #00000f;
 $secondary-color: #1c3fa8;
 $darkBlue-color: #002240;
-$light-color: #f4f4f4;
+$light-color: #d6d2d2;
 $font-color: #eee;
+$success-color: #5cb85c;
+$error-color: #d9534f;
 $backNavShowcase: #047adb;
 $border-color: #b4becb;
 
@@ -72,6 +74,13 @@ img {
   width: 100%;
 }
 
+code,
+pre {
+  background: #333;
+  color: #eee;
+  padding: 10px;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -119,6 +128,29 @@ img {
   margin: 10px;
   color: $background-color;
   box-shadow: 5px 0px 10px 2px rgba($color: $backNavShowcase, $alpha: 0.25);
+}
+
+/* Alert */
+
+.alert {
+  background-color: $light-color;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.alert-success {
+  background-color: $success-color;
+  color: $font-color;
+}
+
+.alert-error {
+  background-color: $error-color;
+  color: $font-color;
 }
 
 /* Margin */
@@ -255,4 +287,26 @@ p-5 {
 
 .xl {
   font-size: 4rem;
+}
+
+/* Text Colors */
+
+.text-primary {
+  color: $backNavShowcase;
+}
+
+.text--dark {
+  color: $darkBlue-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-darkBlue {
+  color: $darkBlue-color;
+}
+
+.text-light {
+  color: $light-color;
 }

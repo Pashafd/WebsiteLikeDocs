@@ -7,7 +7,8 @@ const common = require('./webpack.common.js')
 module.exports = merge(common, {
   // Set the mode to development or production
   // Установка режима разработки или продакшна
-  mode: 'development',
+  // mode: 'development',
+  mode: 'production',
 
   // Control how source maps are generated
   // Управление созданием карт источников

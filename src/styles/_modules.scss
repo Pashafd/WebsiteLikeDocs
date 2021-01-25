@@ -40,6 +40,12 @@
     height: 350px;
     width: 100%;
     padding: 40px;
+
+    animation: slideInFromRight 1s ease-in;
+  }
+
+  .showcase-text {
+    animation: slideInFromLeft 1s ease-in;
   }
 
   h1 {
@@ -98,6 +104,7 @@
 
 .stats {
   padding-top: 100px;
+  animation: slideInFromBottom 1s ease-in;
 
   .stats-heading {
     max-width: 500px;
@@ -163,6 +170,16 @@
   }
 }
 
+.features-head {
+  .lead {
+    animation: slideInFromLeft 1s ease-in;
+  }
+
+  img {
+    animation: slideInFromRight 1s ease-in;
+  }
+}
+
 .fetures-sub-head {
   img {
     width: 300px;
@@ -193,6 +210,17 @@
 }
 
 /* Docs */
+
+.docs-head {
+  .lead {
+    animation: slideInFromLeft 1s ease-in;
+  }
+
+  img {
+    animation: slideInFromRight 1s ease-in;
+  }
+}
+
 .docs-main {
   h3 {
     margin: 20px 0;
@@ -275,7 +303,7 @@
 
 @keyframes slideInFromBottom {
   0% {
-    transform: translateY (100%);
+    transform: translateY(100%);
   }
 
   100% {
@@ -298,14 +326,16 @@
 
   .showcase {
     height: auto;
-    .shwocase-text {
+    .showcase-text {
       text-align: center;
       margin-top: 40px;
+      animation: slideInFromTop 1s ease-in;
     }
 
     .showcase-form {
       justify-self: center;
       margin: auto;
+      animation: slideInFromBottom 1s ease-in;
     }
   }
 

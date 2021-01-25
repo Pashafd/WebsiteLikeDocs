@@ -17,7 +17,9 @@ module.exports = merge(common, {
   // Запуск сервера для разработки
   devServer: {
     historyApiFallback: true,
-    contentBase: paths.build,
+    // contentBase: paths.build,
+    contentBase: './path/html/files',
+    watchContentBase: true,
     open: true,
     compress: true,
     hot: true,
